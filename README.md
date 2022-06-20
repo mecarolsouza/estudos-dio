@@ -1,2 +1,4 @@
-# Repositório de estudos voltados ao curso de introdução ao Git/GitHub da DIO 💻
-Desafios do curso de git/GitHub da DIO e atividades pessoais.
+# Olá! Bem vindo(a) ao meu primeiro repositório. 💻
+### Este é um repositório de estudos voltados ao Bootcamp fullstack developer da Santander + DIO. :books: 
+
+Aqui estão os desafios do curso de Git/GitHub da DIO e atividades práticas desenvolvidas por mim.
