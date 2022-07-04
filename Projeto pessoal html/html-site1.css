@@ -1,0 +1,30 @@
+
+body{
+    margin: 0;
+    background-color: rgb(253, 210, 131);   
+}
+
+.ilustra-div{
+   display: flex;
+    width: 200px;
+    border: solid 1px white;
+
+}
+
+.ilustra{
+    display: flex;
+    width: 170px;
+    border-radius: 50%;
+}
+.introduction{
+    display: flex;
+    float: left;
+    border: solid 1px black;
+    margin-left: 20%
+}
+.media{
+    display: flex;
+    float: right;
+    border: dotted 1px black;
+    margin-right: 20%;
+}
