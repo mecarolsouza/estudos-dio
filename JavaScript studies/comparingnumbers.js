@@ -1,6 +1,6 @@
 function comparenumbers (num1, num2) {
     const firstmessage = createfirstmessage (num1, num2);
-    const secondmessage = createsecondmessage (num1. num2);
+    const secondmessage = createsecondmessage (num1, num2);
 
     return `${firstmessage} ${secondmessage}`
 
@@ -22,27 +22,38 @@ function createfirstmessage (num1, num2){
         areequal = 'not';
     }
 
-    return `The numbers ${num1} and ${num2} are ${areequal} equal.`;
+    return `The numbers ${num1} and ${num2} are${' ' + areequal} equal.`;
 }
 
 function createsecondmessage (num1, num2) {
+    
     const sum = num1 + num2;
     
-    let result10 = 'less';
-    let result20 = 'less';
+    let result10 = 'less than';
+    let result20 = 'less than';
 
     const compare10 = sum > 10;
     const compare20 = sum > 20;
+    const equal10 = sum === 10;
+    const equal20 = sum === 20;
 
     if(compare10) {
-        result10 = 'more';
+        result10 = 'more than';
     }
 
     if(compare20) {
-        result20 = 'more';
+        result20 = 'more than';
     }
 
-    return `Their sum is equal to ${sum}, which is ${result10} than 10 and ${result20} than 20.`
+    if(equal10) {
+        result10 = 'equal to';
+    }
+
+    if(equal20) {
+        result20 = 'equal to';
+    }
+
+    return `Their sum is equal to ${sum}, which is ${result10} 10 and ${result20} 20.`;
 }
 
-console.console.log(1, 2);
+console.log(comparenumbers(30, 5));
